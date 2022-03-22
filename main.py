@@ -72,7 +72,8 @@ def create_picks(tournament: Tournament, upset):
     final_four = []
     finals = []
 
-    # pick risk based off a bell curve from roughly -0.3 to 0.3
+    # pick risk based off a bell curve from roughly -0.3 to 0
+    # MODIFY THIS TO CHANGE BOT VARIANCE
     risk = random.gauss(0, 0.1) if upset else 0
 
     # Pick up until the final four for each region
@@ -246,7 +247,7 @@ if __name__ == '__main__':
     total_actual_upsets = 0
     total_picked_upsets = 0
 
-    iterations = 10000
+    iterations = 100000
     players = 10
 
     start_time = time.perf_counter()
