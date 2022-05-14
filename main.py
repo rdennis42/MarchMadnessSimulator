@@ -250,6 +250,8 @@ if __name__ == '__main__':
     iterations = 100000
     players = 10
 
+    print("Running " + str(iterations) + " iterations with " + str(players) + " players.")
+
     start_time = time.perf_counter()
 
     # run x iterations of complete simulation
