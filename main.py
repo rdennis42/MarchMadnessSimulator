@@ -247,7 +247,7 @@ if __name__ == '__main__':
     total_actual_upsets = 0
     total_picked_upsets = 0
 
-    iterations = 100000
+    iterations = 1000
     players = 10
 
     print("Running " + str(iterations) + " iterations with " + str(players) + " players.")
